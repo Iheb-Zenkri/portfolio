@@ -22,7 +22,7 @@ const Footer: React.FC<Props> = ({isDarkMode}) => {
                     <a target='_blank' href="https://github.com/Iheb-Zenkri">Github</a>
                 </li>
                 <li className='flex items-center justify-center gap-1'>
-                    <Image src={isDarkMode ? assets.linkedinDark : assets.linkedin} alt='' className='w-6'/>
+                    <Image src={isDarkMode ? assets.linkedinDark : assets.linkedin} alt='' className='w-6 sm:w-4'/>
                     <a target='_blank' href="https://linkedin.com/in/iheb-zenkri-8a6b10213">LinkedIn</a>
                 </li>
                 <li className='flex items-center justify-center gap-1'>

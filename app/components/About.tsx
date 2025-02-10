@@ -11,7 +11,7 @@ interface Props {
 const About: React.FC<Props> = ({isDarkMode}) => {
   return (
     <motion.div initial={{opacity:0, y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:0.5, delay:0.3}}
-    id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
+    id='about' className='w-full px-[12%] py-10  scroll-mt-20'>
         <motion.h4 initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}}
         className='text-center mb-2 text-lg font-Ovo'>
         Introduction</motion.h4>
@@ -21,14 +21,14 @@ const About: React.FC<Props> = ({isDarkMode}) => {
         About me</motion.h2>
 
         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8}}
-        className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+        className='flex w-full flex-col lg:flex-row items-center lg:items-start  gap-20 my-20 '>
             <motion.div initial={{opacity:0,scale:0.9}} whileInView={{opacity:1,scale:1}} transition={{duration:0.6}}
-            className='w-64 sm:w-80 rounded-3xl max-w-none'>
+            className='w-64 sm:w-80 rounded-3xl max-w-none '>
                 <Image src={assets.profileImage} alt='' className='w-full rounded-3xl'/>
             </motion.div>
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.6,delay:0.8}}
-            className='flex-1'>
-                <p className='mb-10 max-w-2xl font-Ovo'>
+            className='flex w-full flex-col'>
+                <p className='mb-10 max-w-2xl  font-Ovo'>
                     Passionate and driven software engineer with a strong foundation in backend
                     and frontend development. Skilled in building scalable, efficient systems with
                     a problem-solving mindset. Committed to continuous learning, innovation, 
@@ -36,7 +36,7 @@ const About: React.FC<Props> = ({isDarkMode}) => {
                     and eventually launch a successful startup.</p>
 
                     <motion.ul initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8,delay:1}}
-                    className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+                    className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl '>
                         {infoList.map(({icon,iconDark,title,description},index)=>(
                             <motion.li whileHover={{scale:1.05}}
                              className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer

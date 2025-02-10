@@ -34,14 +34,14 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode,setIsDarkMode}) => {
   return (
     <>
         <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
-            <Image src={assets.headerBg} alt='' className='w-full' />
+            <Image src={assets.headerBg} alt='' className='w-full h-auto object-cover' />
         </div>
         
-        <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 
+        <nav className={`w-full fixed px-5 sm:px-6 lg:px-8 xl:px-[8%] py-4 
         flex items-center justify-between z-50 
         ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
             <a href='#top'>
-                <h1 className='w-35 cursor-pointer mr-14 text-2xl font-Outfit font-semibold'>
+                <h1 className='text-2xl font-Outfit font-semibold mr-14'>
                     Zenkri Iheb.
                 </h1>
             </a>
@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode,setIsDarkMode}) => {
 
             {/*-- ------ mobile menu ------ --*/}
             <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 
-            top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500
+            top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition-transform duration-500
             dark:bg-darkHover dark:text-white'>
                 <div className='absolute right-6 top-6' onClick={closeMenu}>
                     <Image src={isDarkMode ? assets.closeWhite : assets.closeBlack} alt='' className='w-5 cursor-pointer' />
