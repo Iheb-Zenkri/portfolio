@@ -81,8 +81,8 @@ export const infoList = [
     {
         icon : project_icon,
         iconDark: project_icon_dark,
-        title: "Projects",
-        description: "Built more than 10 projects",
+        title: "Frameworks",
+        description: "Next Js, React Js, Angular, Express Js, SpringBoot",
     }
 ]
 export const toolsData = [
