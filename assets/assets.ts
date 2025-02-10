@@ -38,6 +38,7 @@ import arrowIconDark from './arrow-icon-dark.png'
 import menuWhite from './menu-white.png'
 import closeWhite from './close-white.png'
 import mailIconDark from './mail_icon_dark.png'
+import { link } from 'fs';
 
 export const assets = {
     arrow,
@@ -117,21 +118,25 @@ export const workData = [
     {
         title : 'Investors Platform',
         description : 'Web app',
-        bgImage : '/work-1.png'
+        bgImage : '/work-1.png',
+        link : 'https://github.com/Iheb-Zenkri/Angular',
     },
     {
         title : 'Staff management',
         description : 'Mobile app',
-        bgImage : '/work-2.png'
+        bgImage : '/work-2.png',
+        link : 'https://github.com/Iheb-Zenkri/SNS_mobileApp',
     },
     {
         title : 'Ticket management',
         description : 'backend system',
-        bgImage : '/work-3.png'
+        bgImage : '/work-3.png',
+        link : 'https://github.com/Iheb-Zenkri/Ticket-Management-ExpressJs',
     },
     {
         title : 'E-Learning Platform',
         description : 'Fullstack app',
-        bgImage : '/work-4.png'
+        bgImage : '/work-4.png',
+        link : 'https://github.com/Iheb-Zenkri/E-Learning-Platforme-SpringBoot',
     },
 ]
