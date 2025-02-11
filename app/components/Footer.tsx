@@ -18,15 +18,15 @@ const Footer: React.FC<Props> = ({isDarkMode}) => {
             <p className='leading-none'>© 2025 Zenkri Iheb. All right reserved.</p>
             <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
                 <li className='flex items-center justify-center gap-1'>
-                    <Image src={isDarkMode ? assets.githubDark : assets.github} alt='' className='w-7'/> 
+                    <Image src={isDarkMode ? assets.githubDark : assets.github} alt='' className='w-6'/> 
                     <a target='_blank' href="https://github.com/Iheb-Zenkri">Github</a>
                 </li>
                 <li className='flex items-center justify-center gap-1'>
-                    <Image src={isDarkMode ? assets.linkedinDark : assets.linkedin} alt='' className='w-6 sm:w-4'/>
+                    <Image src={isDarkMode ? assets.linkedinDark : assets.linkedin} alt='' className='w-5'/>
                     <a target='_blank' href="https://linkedin.com/in/iheb-zenkri-8a6b10213">LinkedIn</a>
                 </li>
                 <li className='flex items-center justify-center gap-1'>
-                    <Image src={isDarkMode ? assets.facebookDark : assets.facebook} alt='' className='w-6'/>
+                    <Image src={isDarkMode ? assets.facebookDark : assets.facebook} alt='' className='w-5'/>
                     <a target='_blank' href="https://www.facebook.com/zenkri.iheb/">Facebook</a>
                 </li>
             </ul>

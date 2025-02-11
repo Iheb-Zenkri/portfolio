@@ -47,7 +47,7 @@ const work: React.FC<Props> = ({isDarkMode}) => {
             ))}
         </motion.div>
         <motion.a initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:1.1}}
-        href='' className='w-max flex items-center justify-center gap-2 text-gray-700
+        target='_blank' href='https://github.com/Iheb-Zenkri' className='w-max flex items-center justify-center gap-2 text-gray-700
          border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500
          dark:text-white dark:border-white dark:hover:bg-darkHover'>
             Show more <Image src={isDarkMode ? assets.rightArrowWhite : assets.rightArrow} alt='more' className='w-4' />

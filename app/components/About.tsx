@@ -39,7 +39,7 @@ const About: React.FC<Props> = ({isDarkMode}) => {
                     className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl '>
                         {infoList.map(({icon,iconDark,title,description},index)=>(
                             <motion.li whileHover={{scale:1.05}}
-                             className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+                             className='border-[0.5px] border-gray-400 rounded-xl p-6 
                              hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
                              dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50' 
                             key={index}>
@@ -58,7 +58,7 @@ const About: React.FC<Props> = ({isDarkMode}) => {
                         {toolsData.map((tool , index)=>(
                             <motion.li whileHover={{scale:1.1}}
                              className='flex items-center justify-center w-12 sm:w-14
-                             aspect-square border border-gray-400 rounded-lg cursor-pointer
+                             aspect-square border border-gray-400 rounded-lg
                              hover:-translate-y-1 duration-500' 
                             key={index}>
                                 <Image src={tool} alt='' className='w-5 sm:w-7'/>

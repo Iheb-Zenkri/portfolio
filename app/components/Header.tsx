@@ -28,14 +28,15 @@ const Header = () => {
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
             <motion.a initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration: 0.6, delay:1}}
-            href='#contact' className='px-10 py-3 border rounded-full border-white bg-black text-white flex items-center gap-2
-            dark:bg-transparent'>contact me <Image src={assets.rightArrowWhite} alt='' 
+            href='#contact' className='px-10 py-3 border rounded-full border-white bg-black hover:bg-black/90 transition-colors duration-500
+             text-white flex items-center gap-2 dark:bg-transparent'>
+                contact me <Image src={assets.rightArrowWhite} alt='' 
             className='w-4'/>
             </motion.a>
 
             <motion.a initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration: 0.6, delay:1.2}}       
             href='/sample-resume.pdf' download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2
-            bg-white dark:text-black'>
+            bg-white hover:bg-gray-50 transition-colors duration-500 dark:text-black'>
             My resume <Image src={assets.downloadIcon} alt='' className='w-4'/>
             </motion.a>
         </div>

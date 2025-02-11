@@ -21,8 +21,7 @@ import intellij from './intellij.png'
 import postman from './postman.png';
 import mysql from './mysql.png'
 import web from './web-icon.png';
-import graphic from './graphics-icon.png'
-import ui from './ui-icon.png'
+import backend from './ui-icon.png'
 import mobile from './mobile-icon.png'
 import rightArrow from './right-arrow.png'
 import sendIcon from './send-icon.png'
@@ -38,7 +37,9 @@ import arrowIconDark from './arrow-icon-dark.png'
 import menuWhite from './menu-white.png'
 import closeWhite from './close-white.png'
 import mailIconDark from './mail_icon_dark.png'
-import { link } from 'fs';
+import fullstack from './backend-icon.png'
+import db from './db-icon.png'
+import ui from './graphics-icon.png'
 
 export const assets = {
     arrow,
@@ -90,30 +91,43 @@ export const toolsData = [
 ]
 export const serviceData = [
     {
-        icon : web,
-        title: "Web design",
-        description: "Web developement is the process of building programming...",
-        link : "",
+        icon: web,
+        title: "Frontend Development",
+        description: "Building modern web apps with React, Angular, or Next.js",
+        link: "https://nextjs.org",
     },
     {
-        icon : mobile,
-        title: "Mobile app",
-        description: "Mobile app development involves creating software for mobile desvices...",
-        link : "",
+        icon: backend,
+        title: "Backend Development",
+        description: "Developing secure & scalable RESTful & GraphQL APIs",
+        link: "https://spring.io/projects/spring-boot",
     },
     {
-        icon : ui,
-        title: "UI/UX design",
-        description: "UI/UX design focuses on creating a seamless user experince...",
-        link : "",
+        icon: mobile,
+        title: "Mobile App Development",
+        description: "Cross-platform app development (Flutter, React Native, Kotlin)",
+        link: "https://flutter.dev/",
+    },
+    { 
+        icon: ui, 
+        title: "UI/UX Design",
+        description: "UI/UX design focuses on creating a seamless user experience", 
+        link: "https://www.invisionapp.com/inside-design/guide-to-ux-design/",
     },
     {
-        icon : graphic,
-        title: "Graphics design",
-        description: "Creative design solutions to enhance visual communication...",
-        link : "",
+        icon: fullstack,
+        title: "Full-Stack Development",
+        description: "Progressive Web Apps (PWAs) & real-time applications",
+        link: "https://web.dev/progressive-web-apps/",
+    },
+    {
+        icon: db,
+        title: "Database Design & Optimization",
+        description: "Designing databases, Performance tuning & query optimization",
+        link: "https://www.mongodb.com",
     }
-]
+];
+
 export const workData = [
     {
         title : 'Investors Platform',
