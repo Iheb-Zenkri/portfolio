@@ -31,6 +31,12 @@ export default function Home() {
     }
   },[isDarkMode]);
 
+  useEffect(() => {
+    fetch('/api/track')
+        .then(res => res.json())
+        .catch(err => console.error('Error tracking visitor:', err));
+}, []);
+
   return (
    <>
    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
