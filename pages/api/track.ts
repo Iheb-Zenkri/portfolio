@@ -2,6 +2,16 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import mongoose from 'mongoose';
 
+interface IpLocation {
+    country: string;
+    region: string;
+    city: string;
+    lat: number;
+    lon: number;
+    googleMapsUrl: string;
+}
+
+
 const MONGODB_URI = process.env.MONGODB_URI || 'your-mongodb-uri-here';
 const GEOLOCATION_API = 'http://ip-api.com/json/';
 
@@ -30,7 +40,7 @@ async function connectToDatabase() {
     await mongoose.connect(MONGODB_URI);
 }
 
-async function getIpLocation(ip: string | string[]): Promise<any> {
+async function getIpLocation(ip: string | string[]): Promise<IpLocation | null> {
     try {
         const response = await fetch(`${GEOLOCATION_API}${ip}`);
         const data = await response.json();
