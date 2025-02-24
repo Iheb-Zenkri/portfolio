@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     url: "https://zenkriiheb.vercel.app",
     siteName: "Zenkri Iheb",
   },
+  verification: {
+    google: "4eD-DA66RmA5HmsLqx9J5IcpJVvuHQ7a8k_MQrbBFXU",
+  },
 };
 
 export default function RootLayout({
