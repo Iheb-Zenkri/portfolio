@@ -11,8 +11,25 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "Zenkri Iheb",
-  description: "",
+  title: "Zenkri Iheb | Software Engineer Portfolio",
+  description: "Zenkri Iheb - Software Engineer specialized in frontend and backend development. Explore my portfolio and projects.",
+  keywords: [
+    "Zenkri Iheb",
+    "Software Engineer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Developer",
+    "Portfolio",
+  ],
+  authors: [{ name: "Zenkri Iheb" }],
+  creator: "Zenkri Iheb",
+  openGraph: {
+    title: "Zenkri Iheb | Software Engineer Portfolio",
+    description:
+      "Zenkri Iheb - Software Engineer specialized in frontend and backend development. Explore my portfolio and projects.",
+    url: "https://zenkriiheb.vercel.app",
+    siteName: "Zenkri Iheb",
+  },
 };
 
 export default function RootLayout({
