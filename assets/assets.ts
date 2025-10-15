@@ -3,7 +3,7 @@ import headerBg from './header-bg-color.png';
 import moonIcon from './moon_icon.png';
 import menuBlack from './menu-black.png';
 import closeBlack from './close-black.png';
-import profileImage from './profile_img.jpg';
+import profileImage from './real_profile_img.jpg';
 import handIcon from './hand-icon.png';
 import rightArrowWhite from './right-arrow-white.png';
 import downloadIcon from './download-icon.png';
