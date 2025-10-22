@@ -29,11 +29,9 @@ const About: React.FC<Props> = ({isDarkMode}) => {
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.6,delay:0.8}}
             className='flex w-full flex-col'>
                 <p className='mb-10 max-w-2xl  font-Ovo'>
-                    Passionate and driven software engineer with a strong foundation in backend
-                    and frontend development. Skilled in building scalable, efficient systems with
-                    a problem-solving mindset. Committed to continuous learning, innovation, 
-                    and creating impactful solutions. Aspiring to work in top companies, gain experience,
-                    and eventually launch a successful startup.</p>
+                    Final-year software engineering student specialized in Next.js and Spring Boot. Skilled in building scalable systems, optimizing 
+                    performance, and enhancing user experience through clean architecture. Driven to deliver maintainable, innovative solutions and solve 
+                    real-world problems with impactful software.</p>
 
                     <motion.ul initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8,delay:1}}
                     className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl '>
